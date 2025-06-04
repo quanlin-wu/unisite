@@ -1,0 +1,50 @@
+# Default or base configuration for pocket detection experiments.
+
+defaults:
+  - override hydra/launcher: joblib
+
+model:
+  node_embed_size: 256
+  num_queries: 32
+  num_classes: 1
+  no_heads: 8
+  dropout: 0.1
+  aux_loss: True
+  model_type: seq_only
+  enc_layers: 6
+  gearnet_weight: ""
+  dec_layers: 6
+  dim_feedforward: 1024
+  embed:
+    index_embed_size: 32
+    aatype_embed_size: 64
+
+data:
+    train_data: ""
+    test_data: ""
+    max_seq_len: 800
+
+experiment:
+  # Experiment metadata
+  name: pocket_detection
+  run_id: null
+
+  eval_batch_size: 16
+  use_gpu: True
+  num_gpus: 1
+
+  # Evaluation arguments
+  iou_threshold: [0.3, 0.5]
+  output_dir: outputs
+  eval_dir: infer_results
+  # Filled in during training.
+  num_parameters: null
+
+hydra:
+  run:
+    dir: ''
+  sweeper:
+    params:
+      # Example of hydra multi run and wandb.
+      experiment.name: use_wandb
+      experiment.use_wandb: False
