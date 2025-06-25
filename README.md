@@ -1,4 +1,12 @@
-# UniSite: UniProt-centric Dataset and Learning Framework for Protein Ligand Binding Site Detection
+# UniSite: The First Cross-Structure Dataset and Learning Framework for End-to-End Ligand Binding Site Detection
+
+
+<h5 align="center">
+
+[![Paper](https://img.shields.io/badge/Arxiv-2506.03237-b31b1b.svg?logo=arXiv)](https://arxiv.org/pdf/2506.03237)
+[![Model1](https://img.shields.io/badge/🤗-Model_Download-blue.svg)](https://huggingface.co/quanlin-wu/unisite_protein-ligand_binding_site_detection_v1/tree/main)
+
+</h5>
 
 The official implementation for "UniSite: The First Cross-Structure Dataset and Learning Framework for End-to-End Ligand Binding Site Detection".
 
@@ -99,4 +107,4 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. See the License for the specific language governing permissions and limitations under the License.
 
-Unless permission is granted, you are not allowed to use UniSite for any commercial purposes. If you would like to use UniSite for commercial purposes, you may contact: [JigangFan@stu.pku.edu.cn](mailto:JigangFan@stu.pku.edu.cn)。
+Unless permission is granted, you are not allowed to use UniSite for any commercial purposes. If you would like to use UniSite for commercial purposes, you may contact: [JigangFan@stu.pku.edu.cn](mailto:JigangFan@stu.pku.edu.cn).
