@@ -1,10 +1,10 @@
 # UniSite: The First Cross-Structure Dataset and Learning Framework for End-to-End Ligand Binding Site Detection
 
-
 <h5 align="center">
 
 [![Paper](https://img.shields.io/badge/Arxiv-2506.03237-b31b1b.svg?logo=arXiv)](https://arxiv.org/pdf/2506.03237)
 [![Model1](https://img.shields.io/badge/🤗-Model_Download-blue.svg)](https://huggingface.co/quanlin-wu/unisite_protein-ligand_binding_site_detection_v1/tree/main)
+[![Dataset](https://img.shields.io/badge/🤗-Dataset_Download-orange.svg)](https://huggingface.co/datasets/quanlin-wu/unisite-ds_v1/tree/main)
 
 </h5>
 
@@ -27,6 +27,10 @@ We then propose **UniSite, the first end-to-end ligand binding site detection fr
 In addition, we introduce **Average Precision based on Intersection over Union (IoU)** as a more accurate evaluation metric for ligand binding site prediction. Extensive experiments on UniSite-DS and several representative benchmark datasets demonstrate that IoU-based Average Precision provides a more accurate reflection of prediction quality, and that UniSite outperforms current state-of-the-art methods in ligand binding site detection.
 
 ![table1](./_assets/table1.png)
+
+## Dataset
+
+The datasets can be downloaded at [here](https://huggingface.co/datasets/quanlin-wu/unisite-ds_v1/tree/main), and the detailed illustration of the datasets can be found in [DATASETS.md](./DATASETS.md).
 
 ## Installation
 
@@ -100,6 +104,7 @@ python unisite/evaluation/eval_ap.py -e {EVALUATION_DIR} -t {GROUND_TRUTH_DIR}
 # DCC & DCA
 python unisite/evaluation/eval_dcc_dca.py -e {EVALUATION_DIR} -t {TARGET_CSV}
 ```
+The detailed explanation and usage of the evaluation scripts can be found in [EVALUATION.md](./EVALUATION.md).
 
 ## License
 
@@ -107,4 +112,5 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. See the License for the specific language governing permissions and limitations under the License.
 
-Unless permission is granted, you are not allowed to use UniSite for any commercial purposes. If you would like to use UniSite for commercial purposes, you may contact: [JigangFan@stu.pku.edu.cn](mailto:JigangFan@stu.pku.edu.cn).
+Unless permission is granted, you are not allowed to use UniSite for any commercial purposes. If you would like to use UniSite for commercial purposes, you may contact: [JigangFan@stu.pku.edu.cn](mailto:JigangFan@stu.pku.edu.cn) or [quanlin@pku.edu.cn](mailto:quanlin@pku.edu.cn)
+
